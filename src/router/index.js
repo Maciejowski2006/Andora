@@ -1,22 +1,50 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+
 import Home from '../views/Home.vue'
+import UczniowieVsNauczyciele from '../views/UczniowieVsNauczyciele'
+import Abonenci from '../views/Abonenci.vue'
+import Galeria from '../views/Galeria.vue'
+import Historia from '../views/Historia.vue'
+import Bibliografia from '../views/Bibliografia'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/About.vue')
-    }
-  }
+	{
+		path: '/',
+		name: 'Home',
+		component: Home
+	},
+	{
+		path: '/wskaznik-uczniow-do-nauczycieli',
+		name: 'Wskaźnik uczniów do nauczycieli',
+		component: UczniowieVsNauczyciele
+	},
+	{
+		path: '/liczba-abonentow-telefonii',
+		name: 'Liczba abonentów telefonii',
+		component: Abonenci
+	},
+	{
+		path: '/galeria',
+		name: 'Galeria',
+		component: Galeria
+	},
+	{
+		path: '/historia',
+		name: 'Historia',
+		component: Historia
+	},
+	{
+		path: '/Bibliografia',
+		name: 'Bibliografia',
+		component: Bibliografia
+	},
+	{
+		path: '/:pathMatch(.*)',
+		name: 'Nie znaleziono strony',
+		component: NotFound
+	}
+
 ]
 
 const router = createRouter({

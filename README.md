@@ -1,19 +1,25 @@
-# andora-test
+# Strona jest zahostowana i dostępna [tutaj](https://andora-7f1d1.web.app/#/).
+# Jeśli chcemy uruchmić stronę lokalnie, to *wymagany* jest [Node.js](https://nodejs.org/en/)(v16.14.0 - LTS). 
 
-## Project setup
+## Instrukcje do uruchamiania/modyfikacji projektu lokalnie:
+### Uruchomienie lokalnej wersji produkcyjnej
+```
+npm install -g serve
+serve -s dist
+```
+---
+
+### Setup projektu do modyfikacji
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Kompilacja, hot reload i serwer lokalny
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Komilacja i minifikacja do produkcji
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
