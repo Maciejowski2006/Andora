@@ -1,5 +1,5 @@
 <template>
-	<nav>
+	<nav id="navbar">
 		<router-link tabindex="1" to="/">Strona Główna</router-link>
 		<router-link tabindex="2" to="/wskaznik-uczniow-do-nauczycieli">Wskaźnik uczniów do nauczycieli</router-link>
 		<router-link tabindex="3" to="/liczba-abonentow-telefonii">Liczba abonentów telefonii</router-link>

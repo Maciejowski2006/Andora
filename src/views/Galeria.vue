@@ -1,7 +1,6 @@
 <template>
 <main>
 	<article>
-		<h6>Zdjęcia są z <a href="https://www.planetware.com/pictures/andorra-and.htm">tej strony</a>.</h6>
 		<div id="grid-container">
 			<div class="grid-item" v-for="item in elements">
 				<img :src='item.url' @click="LinkTo(item.url)"/>
@@ -116,9 +115,12 @@ h6 {
 	img {
 		width: inherit;
 		height: auto;
+		aspect-ratio: 460 / 328;
+
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
 		cursor: pointer;
+
 	}
 	span {
 		display: inline-block;

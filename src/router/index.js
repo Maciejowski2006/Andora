@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Home from '../views/Home.vue'
-import UczniowieVsNauczyciele from '../views/UczniowieVsNauczyciele'
+import UczniowieVsNauczyciele from '../views/Uczniowie'
 import Abonenci from '../views/Abonenci.vue'
 import Galeria from '../views/Galeria.vue'
 import Historia from '../views/Historia.vue'
