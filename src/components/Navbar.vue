@@ -1,11 +1,11 @@
 <template>
 	<nav id="navbar">
-		<router-link tabindex="1" to="/">Strona Główna</router-link>
-		<router-link tabindex="2" to="/wskaznik-uczniow-do-nauczycieli">Wskaźnik uczniów do nauczycieli</router-link>
-		<router-link tabindex="3" to="/liczba-abonentow-telefonii">Liczba abonentów telefonii</router-link>
-		<router-link tabindex="4" to="/galeria">Galeria</router-link>
-		<router-link tabindex="5" to="/historia">Historia</router-link>
-		<router-link tabindex="6" to="/bibliografia">Bibliografia</router-link>
+		<router-link tabindex="1" to="/"><i class="em em-house" aria-role="presentation" aria-label="HOUSE BUILDING"></i>Strona Główna</router-link>
+		<router-link tabindex="2" to="/wskaznik-uczniow-do-nauczycieli"><i class="em em-chart_with_downwards_trend" aria-role="presentation" aria-label="CHART WITH DOWNWARDS TREND"></i>Wskaźnik uczniów do nauczycieli</router-link>
+		<router-link tabindex="3" to="/liczba-abonentow-telefonii"><i class="em em-chart_with_upwards_trend" aria-role="presentation" aria-label="CHART WITH UPWARDS TREND"></i>Liczba abonentów telefonii</router-link>
+		<router-link tabindex="4" to="/galeria"><i class="em em-frame_with_picture" aria-role="presentation" aria-label=""></i>Galeria</router-link>
+		<router-link tabindex="5" to="/historia"><i class="em em-bookmark" aria-role="presentation" aria-label="BOOKMARK"></i>Historia</router-link>
+		<router-link tabindex="6" to="/bibliografia"><i class="em em-page_with_curl" aria-role="presentation" aria-label="PAGE WITH CURL"></i>Bibliografia</router-link>
 	</nav>
 </template>
 

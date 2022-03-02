@@ -1,15 +1,13 @@
 <template>
 	<main>
 		<article>
-			<div id="reload">
+			<div id="header">
 				<button class="button graph-btn" v-bind:class="{'btn-enabled': showGraph}" tabindex="9" @click="showGraph=!showGraph">Wykres</button>
 				<button class="button table-btn" v-bind:class="{'btn-enabled': !showGraph}" tabindex="10" @click="showGraph=!showGraph">Tabela</button>
 
-				<button tabindex="11" @click="reload">Przeładuj wykres</button>
-				<i @click="showInfo=!showInfo" class="demo-icon icon-info-circled-alt"></i>
-				<span v-if="showInfo">Przeładuj wykres, gdy ten nie będzie wyświetlany poprawnie</span>
+				<Reload></Reload>
 			</div>
-			<iframe v-if="showGraph" src="https://www.google.pl/publicdata/embed?ds=d5bncppjof8f9_&amp;ctype=l&amp;strail=false&amp;bcs=a&amp;nselm=h&amp;met_y=it_cel_sets&amp;scale_y=lin&amp;ind_y=false&amp;rdim=world&amp;idim=world:Earth&amp;ifdim=world&amp;tstart=-311216400000&amp;tend=1519167600000&amp;hl=pl&amp;dl=pl&amp;ind=false&amp;icfg"></iframe>
+			<iframe v-if="showGraph" src="https://www.google.pl/publicdata/embed?ds=d5bncppjof8f9_&amp;ctype=l&amp;strail=false&amp;bcs=d&amp;nselm=h&amp;met_y=it_cel_sets&amp;scale_y=lin&amp;ind_y=false&amp;rdim=world&amp;idim=country:AND&amp;ifdim=world&amp;hl=pl&amp;dl=pl&amp;ind=false"></iframe>
 			<div id="table">
 				<table v-if="!showGraph">
 					<tr>
@@ -17,7 +15,6 @@
 					</tr>
 					<tr>
 						<td>Rok</td>
-						<td>1985</td>
 						<td>1990</td>
 						<td>1995</td>
 						<td>2000</td>
@@ -28,14 +25,13 @@
 					</tr>
 					<tr>
 						<td>Liczba abonentów</td>
-						<td>750 629</td>
-						<td>11,2101 mln.</td>
-						<td>90,7436 mln.</td>
-						<td>738,1579 mln.</td>
-						<td>2,2058 mld.</td>
-						<td>5,2956 mld.</td>
-						<td>7,1819 mld.</td>
-						<td>7,8583 mld.</td>
+						<td>0</td>
+						<td>2 825</td>
+						<td>23 543</td>
+						<td>64 560</td>
+						<td>65 495</td>
+						<td>71 336</td>
+						<td>82 614</td>
 					</tr>
 				</table>
 			</div>
@@ -45,17 +41,16 @@
 </template>
 
 <script>
+import Reload from '@/components/Reload.vue'
+
 export default {
 	name: "Abonenci",
+	components: {
+		Reload
+	},
 	data() {
 		return {
-			showInfo: false,
 			showGraph: false
-		}
-	},
-	methods: {
-		reload: function () {
-			window.location.reload(false);
 		}
 	}
 }

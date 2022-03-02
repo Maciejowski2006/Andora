@@ -10,7 +10,8 @@ iframe {
 		height: calc(100vh - 456px);
 	}
 }
-#reload {
+#header
+ {
 	margin: 0 0 20px 0;
 	min-height: 50px;
 	display: flex;
@@ -31,21 +32,5 @@ button {
 		background-color: $dark1;
 		color: $light1;
 		box-shadow: 0 0 1em 2px $accent;
-	}
-}
-span {
-	font-size: 1.5rem;
-	background-color: $dark2;
-	padding: 10px 15px;
-	border-radius: 15px;
-	box-shadow: 0 0 1em 0 $dark2;
-}
-i {
-	margin: 3px 7px 0 7px;
-	cursor: pointer;
-	transition-duration: .2s;
-	
-	&:hover {
-		color: $accent;
 	}
 }

@@ -19,6 +19,7 @@ export default {
 <style lang="scss">
 // Import czcionki
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://emoji-css.afeld.me/emoji.css');
 // Import palety kolorów
 @import 'styles/variables';
 
@@ -62,6 +63,11 @@ a {
 		color: $accent;
 	}
 }
+i {
+	display: inline-block;
+	cursor: default;
+}
+
 // Scrollbar
 ::-webkit-scrollbar {
 	width: 10px;
